@@ -12,8 +12,8 @@ class Compiler {
   
   static function compile() {
     var out = haxe.macro.Compiler.getOutput();
-    if (!out.endsWith('.js'))
-       Context.warning('Expected .js extension for output file $out', Context.currentPos());
+    //if (!out.endsWith('.js'))
+       //Context.warning('Expected .js extension for output file $out', Context.currentPos());
     
     var min = out.substr(0, out.length - 3) + '.min.js';
     
